@@ -9,8 +9,8 @@ from tensorflow.keras.optimizers import *
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-import SCA_dataset as datasets
-import Attack
+import util.SCA_dataset as datasets
+import util.Attack
 
 def byte_to_bit_array(byte_val):
     return np.array([int(b) for b in format(byte_val, '08b')])
